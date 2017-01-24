@@ -1,0 +1,11 @@
+appdirs==1.4.0
+decorator==4.0.11
+packaging==16.8
+praw==3.6.1
+pyparsing==2.1.10
+requests==2.13.0
+ruamel.yaml==0.13.11
+six==1.10.0
+update-checker==0.16
+vext==0.6.8
+vext.gi==0.6.7
