@@ -45,7 +45,7 @@ class RedditBackgroundApp:
         icon_theme = Gtk.IconTheme.get_default()
         self.indicator = AppIndicator3.Indicator.new(
             APP_ID,
-            icon_theme.lookup_icon('user-desktop', 16, 0).get_filename(),
+            icon_theme.lookup_icon('preferences-desktop-wallpaper', 16, 0).get_filename(),
             AppIndicator3.IndicatorCategory.SYSTEM_SERVICES)
 
         app_folder = appdirs.user_data_dir(APP_ID)
