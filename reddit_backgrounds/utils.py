@@ -16,6 +16,8 @@ def get_desktop_environment():
         return 'mac'
     else:  # Most likely either a POSIX system or something not much common
         desktop_session = os.environ.get('DESKTOP_SESSION')
+        if desktop_session is None or desktop_session.lower() == 'default':
+            desktop_session = os.environ.get('XDG_CURRENT_DESKTOP')
         # Easier to match if we don't have to deal with character cases
         if desktop_session is not None:
             desktop_session = desktop_session.lower()
