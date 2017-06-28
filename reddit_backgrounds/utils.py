@@ -23,7 +23,7 @@ def get_desktop_environment():
             desktop_session = desktop_session.lower()
             if desktop_session in {
                     'gnome', 'unity', 'cinnamon', 'mate', 'xfce4', 'lxde', 'fluxbox',
-                    'blackbox', 'openbox', 'icewm', 'jwm', 'afterstep', 'trinity', 'kde'}:
+                    'blackbox', 'openbox', 'icewm', 'jwm', 'afterstep', 'trinity', 'kde', 'x-cinnamon'}:
                 return desktop_session
 
             # TODO: FIX FOR KDE 5 (PLASMA)

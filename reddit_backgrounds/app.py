@@ -109,7 +109,7 @@ class RedditBackgroundApp(BackgroundApp):
 
 def get_app() -> BackgroundApp:
     desktop = get_desktop_environment()
-    if desktop in ('gnome', 'unity', 'cinnamon'):
+    if desktop in ('gnome', 'unity', 'cinnamon', 'x-cinnamon'):
         from .gtk.app import GnomeBackgroundApp
         return GnomeBackgroundApp
     elif desktop == 'mate':
